@@ -1,17 +1,19 @@
 import Image from "next/image";
 import styles from "../styles/CakeCard.module.css";
+import Link from "next/link"
 
-const CakeCard = () => {
+const CakeCard = ({ cake }) => {
   return (
     <div className={styles.container}>
-      <Image src="/img/pizza.png" alt="" width="500" height="500" />
-      <h1 className={styles.title}>FIORI DI ZUCCA</h1>
-      <span className={styles.price}>$19.90</span>
-      <p className={styles.desc}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      </p>
+      <Link href={`/product/${cake._id}`} passHref>
+        <Image src={cake.img} alt="cake image" width="500" height="500" />
+     </Link>
+     <h1 className={styles.title}>{cake.title}</h1>
+      <span className={styles.price}>NGN {cake.prices[0]}</span>
+      <p className={styles.desc}>{cake.desc}</p>
     </div>
   );
 };
 
 export default CakeCard;
+

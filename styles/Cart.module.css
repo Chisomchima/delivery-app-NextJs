@@ -34,8 +34,8 @@
 }
 
 .wrapper {
-  width: 90%;
-  max-height: 300px;
+  width: 100%;
+  max-height: 500px;
   background-color: #333;
   padding: 50px;
   padding-top: 10px;
@@ -44,14 +44,35 @@
   justify-content: space-between;
   color: white;
 }
-
+.totalText{
+  margin-top: 10px;
+}
 .totalTextTitle {
   margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.paymentMethods{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.payButton{
+  width:200px;
+  height: 30px;
+  color:grey;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
 .button {
+  width:200px;
+  background-color: #d1411e;
   height: 30px;
-  color: #d1411e;
+  color: white;
   font-weight: bold;
   cursor: pointer;
   margin-top: 20px;
@@ -111,4 +132,25 @@
   .wrapper{
     width: 100%;
   }
+}
+/*paystack styles*/
+.formContainer {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+   flex-direction: row;
+ 
+}
+.inputs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input{
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 2px;
+}
+.input:nth-child(2){
+  margin-left: 10px;
 }
