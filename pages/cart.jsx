@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
 import { reset } from "../redux/cartSlice"
 import { PaystackButton } from "react-paystack"
+import OrderDetail from "../component/OrderDetail";
 
 
 
